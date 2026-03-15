@@ -16,6 +16,15 @@ pipeline {
                 echo "Cloning Code Successful"
             }
         }
+
+       // # After Implementing the shared library.
+        // stage("Code Clone"){
+        //         steps{
+        //             script{
+        //                 clone("https://github.com/Kumar-Devansh/django-notes-app-tws.git", "main")
+        //             }
+        //         }
+        //     }
         stage("Code Build"){
             steps{
                 echo "Building the Code"
