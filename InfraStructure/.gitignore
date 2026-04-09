@@ -41,3 +41,8 @@ Thumbs.db
 # key files
 key-for-wondurlust*
 key-for-wondurlust.pub
+key-for-practice*
+key-for-practice.pub
+instance_private_ip
+instance_public_ip
+instance_public_dns

@@ -1,8 +1,8 @@
 # Key pair for login
 
 resource "aws_key_pair" "my_key" {
-  key_name   = "key-for-wondurlust"
-  public_key = file("key-for-wondurlust.pub")
+  key_name   = "key-for-practice"
+  public_key = file("key-for-practice.pub")
   tags = {
     Environment = var.env
   }
@@ -59,7 +59,7 @@ resource "aws_security_group" "my_security_group" {
 
 resource "aws_instance" "my_ec2_instance" {
     for_each = tomap({
-        Wondurlust-EC2-Instance = var.ec2_instance_type
+      Practise-EC2-Instance = var.ec2_instance_type
     })
     depends_on = [ aws_security_group.my_security_group, aws_key_pair.my_key ]
 
