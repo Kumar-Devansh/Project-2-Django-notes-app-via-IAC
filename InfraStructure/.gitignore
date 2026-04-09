@@ -25,7 +25,7 @@ instance_public_dns
 *.tfvars.json
 
 # Terraform lock (optional but mostly commit karte hain)
- .terraform.lock.hcl
+.terraform.lock.hcl
 
 # OS files
 .DS_Store
